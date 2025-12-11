@@ -54,7 +54,7 @@ public class BookingServiceImpl implements BookingService {
 		b.setBookingDate(dto.getBookingDate());
 		b.setChekIn(dto.getChekIn());
 		b.setCheckout(dto.getCheckOut());
-		b.setStatus(dto.getStatus());
+	
 		b.setPaymentMethod(dto.getPaymetMethod());
 		b.setUser(user.get());
 		b.setBeds(beds.get());
@@ -77,7 +77,7 @@ public class BookingServiceImpl implements BookingService {
 		existBooking.setCheckout(booking.getCheckout());
 		existBooking.setBookingDate(booking.getBookingDate());
 		existBooking.setPaymentMethod(booking.getPaymentMethod());
-		existBooking.setStatus(booking.getStatus());
+		
 
 	}
 

@@ -3,17 +3,8 @@ package com.example.Hostel.dtos;
 public class PaymentDto {
 
 	private double amount;
-	private String status;
-	private String paymentMehtod;
 	private int bookId;
-
-	public double getAmount() {
-		return amount;
-	}
-
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
+	private String status;
 
 	public String getStatus() {
 		return status;
@@ -23,14 +14,15 @@ public class PaymentDto {
 		this.status = status;
 	}
 
-	public String getPaymentMehtod() {
-		return paymentMehtod;
+	public double getAmount() {
+		return amount;
 	}
 
-	public void setPaymentMehtod(String paymentMehtod) {
-		this.paymentMehtod = paymentMehtod;
+	public void setAmount(double amount) {
+		this.amount = amount;
 	}
 
+	
 	public int getBookId() {
 		return bookId;
 	}

@@ -7,7 +7,7 @@ public class BookingDto {
 	private LocalDate bookingDate;
 	private LocalDate chekIn;
 	private LocalDate checkOut;
-	private String status;
+
 	private String paymetMethod;
 	private int bedId;
 	private int userId;
@@ -34,14 +34,6 @@ public class BookingDto {
 
 	public void setCheckOut(LocalDate checkOut) {
 		this.checkOut = checkOut;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
 	}
 
 	public String getPaymetMethod() {

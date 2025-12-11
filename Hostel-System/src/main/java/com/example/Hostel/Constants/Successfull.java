@@ -13,5 +13,7 @@ public class Successfull {
 	public static final String UPDATE = "Data are updating";
 	
 	public static final String BOOKING = "Booking Are Done";
+	
+	public static final String PAYMENT = "Payment Are Done";
 
 }

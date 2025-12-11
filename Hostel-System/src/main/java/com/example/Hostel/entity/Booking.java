@@ -21,7 +21,6 @@ public class Booking {
 	private LocalDate bookingDate;
 	private LocalDate chekIn;
 	private LocalDate checkout;
-	private String status;
 	private String paymentMethod;
 
 	@OneToMany(mappedBy = "booking", cascade = CascadeType.ALL)
@@ -32,14 +31,6 @@ public class Booking {
 	@OneToOne
 	@JoinColumn(name = "bedId", unique = true)
 	private Beds beds;
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
 
 	public int getBookingId() {
 		return bookingId;
@@ -104,7 +95,5 @@ public class Booking {
 	public void setPayment(List<Payment> payment) {
 		this.payment = payment;
 	}
-	
-
 
 }
